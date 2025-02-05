@@ -23,12 +23,14 @@
         }
 
         .inner-container {
-            background-color: #0e1117;
+            
             width: 100%;
             border-radius: 8px;
             height: auto;
             margin-top: 20px;
             border: 1px solid #2a2e36;
+            backdrop-filter: blur(12.4px);
+-webkit-backdrop-filter: blur(12.4px);
         }
 
         .head-main {

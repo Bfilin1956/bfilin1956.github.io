@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@Bfilin1956</title>
+
+<meta name="description" content="Web Full Stack Developer">
+<meta property="og:url" content="https://bfilin1956.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="@Bfilin1956 Full-Stack-Dev">
+<meta property="og:description" content="Web Full Stack Developer">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="bfilin1956.github.io">
+<meta property="twitter:url" content="https://bfilin1956.github.io">
+<meta name="twitter:title" content="@Bfilin1956 Full-Stack-Dev">
+<meta name="twitter:description" content="Web Full Stack Developer">
+<meta name="twitter:image" content="">
+<!-- Sdu wna UKQ dana? -->
+
+<link rel="icon" type="image/x-icon" href="me.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="me.png">
+<link rel="icon" type="image/png" sizes="32x32" href="me.png">
+<link rel="apple-touch-icon" sizes="180x180" href="me.png">
+
+
     <style>
-        /* Все CSS стили из компонента */
+       
         body {
             margin: 0;
             color: #ffffff;
-            /*background-color: #0e1117; */
-
         }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-v-page="home">
+    <!-- Sdk wi E? -->
     <canvas class="canvas" ></canvas>
     <div class="page" >
         
@@ -62,11 +83,11 @@
         </div>
     </div>
 
-    <!-- Подключаем Prism.js -->
+    <!-- Par wh rhn dxxi zhbgz? -->
     <script src="biult.js"></script>
     <script src="https://unpkg.com/prismjs@1.29.0/prism.js"></script>
     <script>
-        // Код для блока с подсветкой синтаксиса
+        
         const codeSnippet = 
 `<?php
 class DeveloperProfile
@@ -107,7 +128,6 @@ echo "\\n" . $developer->contribute();
 echo "\\n" . $developer->innovate();
 echo "\\n" . $developer->collaborate();`;
 
-        // Вставляем код в DOM
         document.addEventListener('DOMContentLoaded', () => {
             const codeBlock = document.getElementById('code-block');
             const pre = document.createElement('pre');
@@ -116,8 +136,7 @@ echo "\\n" . $developer->collaborate();`;
             code.textContent = codeSnippet;
             pre.appendChild(code);
             codeBlock.appendChild(pre);
-            
-            // Инициализируем подсветку синтаксиса
+
             Prism.highlightAll();
         });
     </script>

@@ -23,14 +23,15 @@
         }
 
         .inner-container {
-            
+            background-color: #0e1117c4;
             width: 100%;
             border-radius: 8px;
             height: auto;
             margin-top: 20px;
             border: 1px solid #2a2e36;
-            backdrop-filter: blur(12.4px);
--webkit-backdrop-filter: blur(12.4px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
         }
 
         .head-main {
@@ -107,12 +108,14 @@
         }
         /* Стили для code block */
         pre {
-            background: #171a23;
+            background-color: #0e11177e;
             padding: 15px;
             border-radius: 16px;
             overflow-x: auto;
             font-size: 14px;
             border: 1px solid #2a2e36;
+            backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
         }
 
         code {

@@ -1,0 +1,192 @@
+.canvas {
+    position: fixed; /* Фиксируем canvas на экране */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Занимает всю ширину экрана */
+    height: 100vh; /* Занимает всю высоту экрана */
+    z-index: -1; /* Помещаем canvas за всеми остальными элементами */
+    pointer-events: none; /* Отключаем взаимодействие с canvas */
+}
+        .page {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .container {
+            width: 900px;
+            height: 100vh;
+            background-color: transparent;
+            position: relative;
+        }
+
+        .inner-container {
+            background-color: #0e1117;
+            width: 100%;
+            border-radius: 8px;
+            height: auto;
+            margin-top: 20px;
+            border: 1px solid #2a2e36;
+        }
+
+        .head-main {
+            width: calc(100% - 20px);
+            height: auto;
+            margin: 10px;
+            gap: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3c4963;
+            background-image: url("me.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            color: #b0b0b0;
+            margin: 2px 0 0 0;
+        }
+
+        .custom-line {
+            border: none;
+            border-top: 1px solid #2a2e36;
+            margin: 0 10px;
+        }
+
+        .body-main {
+            width: calc(100% - 20px);
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .custom-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .custom-list li {
+            margin-bottom: 10px;
+        }
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('Gilroy-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }   
+
+        body {
+            font-family: 'MyCustomFont', sans-serif;
+        }
+        /* Стили для code block */
+        pre {
+            background: #171a23;
+            padding: 15px;
+            border-radius: 16px;
+            overflow-x: auto;
+            font-size: 14px;
+            border: 1px solid #2a2e36;
+        }
+
+        code {
+
+            white-space: pre-wrap;
+        }
+        .token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #999;
+}
+
+.token.punctuation {
+	color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+	color: #e2777a;
+}
+
+.token.function-name {
+	color: #6196cc;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+	color: #f08d49;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+	color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+	color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+	color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	color: green;
+}

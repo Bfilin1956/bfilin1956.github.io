@@ -722,12 +722,12 @@
            }(null);
            requestAnimationFrame(t)
        }(), window.addEventListener("mousemove", function (t) {
-           p[0].moved = p[0].down, p[0].dx = 5 * (t.pageX - p[0].x), p[0].dy = 5 * (t.pageY - p[0].y), p[0].x = t.pageX, p[0].y = t.pageY
+           p[0].moved = p[0].down, p[0].dx = 5 * (t.x - p[0].x), p[0].dy = 5 * (t.y - p[0].y), p[0].x = t.x, p[0].y = t.y
        }), window.addEventListener("touchmove", function (t) {
 
            for (var e = t.targetTouches, i = 0; i < e.length; i++) {
                var s = p[i];
-               s.moved = s.down, s.dx = 8 * (e[i].pageX - s.x), s.dy = 8 * (e[i].pageY - s.y), s.x = e[i].pageX, s.y = e[i].pageY
+               s.moved = s.down, s.dx = 8 * (e[i].x - s.x), s.dy = 8 * (e[i].y - s.y), s.x = e[i].x, s.y = e[i].y
            }
        }, !1), window.addEventListener("touchstart", function (t) {
            for (var e = t.targetTouches, i = 0; i < e.length; i++) i >= p.length && p.push(new s), p[i].id = e[i].identifier, p[i].down = !0, p[i].x = e[i].pageX, p[i].y = e[i].pageY, p[i].color = wt()
